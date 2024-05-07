@@ -1,0 +1,101 @@
+/* Global styles */
+body {
+    /* font-family: 'Roboto', sans-serif; */
+    Font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif
+
+
+}
+
+/* Navigation bar styles */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; /* Ensure the navigation bar is on top of other content */
+    background-color: #FBC40E;
+    color: #343F71;
+    /* border-radius: 25px; Adjust the border-radius to control the pill shape */
+    padding: 15px 0; /* Increase padding on the y-axis */
+    box-shadow: 0px 10px 25px #c8a11f;
+}
+
+nav ul li a {
+    padding: 10px 20px;
+    color: #343F71;
+    text-decoration: none;
+    border-radius: 20px; /* Adjust the border-radius to control the pill shape */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition effects for smooth color and transform changes */
+}
+
+nav ul li a:hover {
+    background-color: #E9D8E4; /* Change background color on hover */
+    color: #343F71;
+    transform: scale(1.05); /* Add scaling effect on hover */
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FBC40E;
+    color: #343F71;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #E9D8E4;
+    color: #FBC40E;
+}
+/* Enable scroll snapping */
+body {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+/* Ensure sections snap to top of viewport */
+section {
+    scroll-snap-align: start;
+}
+
+/* Additional CSS for full viewport height */
+.full-height {
+    min-height: 100vh;
+}
+
+/* Custom style for navigation bar on the main/home page */
+body.home nav {
+    background-color: yellow;
+    color: white;
+    padding: 0 20px; /* Adjust padding as needed */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for a floating effect */
+}
+
+/* Custom style for navigation links */
+.nav-link {
+    color: white;
+}
+
+/* Custom style for navigation links on hover */
+.nav-link:hover {
+    color: yellow;
+}
+
+/* Additional CSS for rounded profile picture */
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: inset 20px;
+}
+
+.profile-picture:hover {
+    transform: scale(1.1);
+}
